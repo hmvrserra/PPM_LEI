@@ -12,7 +12,17 @@ object Ficha4 extends App {
       case (elem, acc) if acc.headOption.contains(elem) => acc
       case (elem, acc) => elem :: acc
     }
-    
+
+
+  type Team = String
+  type Goals = Int
+  type Match = ((Team, Goals),(Team, Goals))
+  type Fixtures = List [Match]
+
+  def noItself(a: Match, b:Match): Boolean =
+    ()
+
+
   println(sum(List(1, 2, 3)))
   println(andFRight(List(false, false, false)))
   print(remDup(List(1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 5)))

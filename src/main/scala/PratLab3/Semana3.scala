@@ -23,6 +23,15 @@ object Semana3 {
     loop(1, n)
   }
   
+  type Team = String
+  type Goals = Int
+  type Match = ((Team, Goals),(Team, Goals))
+  type Fixtures = List [Match]
+  
+  def noItself(a: Match, b:Match): Boolean =
+    ()
+    
+  
   def main(): Unit = {
     println(factorial1(5))
     println(factorial2(5))
