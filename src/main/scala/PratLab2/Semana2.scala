@@ -34,21 +34,21 @@ object Semana2 {
     case _ => 0
   }
   
-  def lengthAndSum (lst: List[Int]): (Double, Double) = lst match {
-    case Nil => (0, 0)
-    case head :: tail => {
-      val recursionResult = lengthAndSum(tail)
-      (recursionResult._1 +)
-    }
-  }
-  
-  def metH (lst: List[Double], a: Double): (List[Double], List[Double]) = {
-    val below: numbers.filter
-    (_ < a)
-    val aboveOrEqual: numbers.filter
-    (_ >= a)
-    (below, aboveOrEqual)
-  }
+//  def lengthAndSum (lst: List[Int]): (Double, Double) = lst match {
+//    case Nil => (0, 0)
+//    case head :: tail => {
+//      val recursionResult = lengthAndSum(tail)
+//      (recursionResult._1 )
+//    }
+//  }
+//  
+//  def metH (lst: List[Double], a: Double): (List[Double], List[Double]) = {
+//    val below: numbers.filter
+//    (_ < a)
+//    val aboveOrEqual: numbers.filter
+//    (_ >= a)
+//    (below, aboveOrEqual)
+//  }
   
   def main(args: Array[String]): Unit = {
     ex1()
